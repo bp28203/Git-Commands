@@ -73,3 +73,14 @@ _A list of my commonly used Git commands_
 
 ### Show Remote URL
 git remote show origin
+
+### Troubleshooting
+Error : 1
+Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+
+Above erros happens if Origin has some changes which are not Locally.
+Solution
+git pull origin develop   // assuming you are trying to push to develop branch
+git push --set-upstream origin develop
